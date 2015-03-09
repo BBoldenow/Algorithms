@@ -18,7 +18,7 @@
 #include <vector>
 
 // define a new locale to ignore non-alphanumeric characters
-struct alpha_num : std::ctype<char>
+struct alpha_num : std::ctype<char> 
 {
     alpha_num(): std::ctype<char>(get_table()) {}
     
