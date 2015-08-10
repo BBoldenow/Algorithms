@@ -13,13 +13,11 @@ namespace Algorithms
             for (int i = 0; i < arr.Count; ++i)
             {
                 int current = arr[i];
-                int pos = i;
 
-                while (pos > 0 && current < arr[pos - 1])
+                for(int pos = i; pos > 0 && arr[pos] < arr[pos - 1]; --pos)
                 {
                     arr[pos] = arr[pos - 1];
                     arr[pos - 1] = current;
-                    --pos;
                 }
             }
         }
