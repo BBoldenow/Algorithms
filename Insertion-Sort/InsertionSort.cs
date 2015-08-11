@@ -10,7 +10,7 @@ namespace Algorithms
     {
         public static void InsertSort(ref List<int> arr)
         {
-            for (int i = 0; i < arr.Count; ++i)
+            for (int i = 1; i < arr.Count; ++i)
             {
                 int current = arr[i];
 
