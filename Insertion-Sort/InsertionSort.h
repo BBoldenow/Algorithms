@@ -4,7 +4,7 @@
 template <typename T> 
 void insertionSort(std::vector<T> &arr)
 {
-	for (int i = 0; i < arr.size(); ++i)
+	for (int i = 1; i < arr.size(); ++i)
 	{
 		T current = arr[i];
 
